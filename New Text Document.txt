@@ -1,0 +1,33 @@
+category: quần lửng, quần lịch sự
+sơ mi và áo kiểu, áo Blazer,Túi và ví, hoodies & Sweatshirt, giày
+---------------------
+thêm trang jsp khác vào <jsp:include page="Menu.jsp"></jsp:include>
+---------------------
+dùng form để muốn action luôn khi click vào link, xong tạo servlet
+--------------------
+<hr> thêm dòng kẻ ngang
+
+
+
+
+
+===============================================================
+liên quan đến addtoCart : 
+Entity:Cart.java, Item,Order,Orderdetail
+dal:
+------------------------
+-xử lí liên quan đến login(loginservlet, logout, CustomerDAO) , tạo sesssion từ login servlet xong up hello lên thanh header,
+nếu 
+<c:if test="${sessionScope.account==null}">
+<li><i class="ti-power-off"></i><a href="Login.jsp">Đăng nhập</a></li>
+</c:if>
+<c:if test="${sessionScope.account!=null}"> 
+
+<li><i class="ti-power-off"></i><a href="logout">Đăng xuất</a></li>
+</c:if> 
+---------------------------------
+Ví dụ toán tử 3 ngôi 
+<input type="radio" name="gen" value="1" ${param.sgen == "1"?"checked":""}>Male
+            <input type="radio" name="gen" value="0" ${param.sgen == "0"?"checked":""}>Female
+=============
+hỏi sao để click vào trang chủ hay sản phẩm nó sáng lên
